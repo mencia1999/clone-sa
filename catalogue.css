@@ -1,0 +1,381 @@
+*, ::before, ::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.btn{
+    padding: 10px 50px;
+    border-radius: 20px;
+    border:none;
+    font-size: 16px;  
+    color: #fff;
+    font-weight: 500;
+}
+.btn:hover{
+    cursor:pointer;
+}
+input {
+    display:inline-block;
+    outline: none;
+    border: none;
+}
+
+/* Section header */
+.header{
+    display:flex;
+    height: 70px;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.header .logo img{
+    width: 50px;
+    height: auto;
+}
+
+.header .search{
+    background-color: #ededed;
+    width: 300px;
+    padding: 8px 15px;
+    border-radius: 20px;
+}
+
+.header .search-logo i {
+   color : #575757;
+}
+
+.header .search-input {
+   
+    width: 90%;
+    height: 100%;
+    padding: 8px 8px;
+    background-color: #ededed;
+    color: black;
+    
+}
+
+.btn-profile{
+    background-color: #048ba8;
+}
+
+/* Section presentation */
+.presentation {
+    height: 40vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.presentation:before{
+    content: '';
+    position: absolute;
+    top:70px;
+    left:0;
+    width: 100%;
+    height:40vh;
+    background-color: #f18f01;
+    border-radius: 0 0 50% 50% / 0 0 100% 100%;
+    transform: scaleX(1.5);
+
+}
+
+.options-btn{
+    display:flex;
+    justify-content: space-between;
+    z-index: 2;
+   
+}
+
+.presentation .service-btn, .adresse-btn{
+    width: 280px;
+    background-color: rgba(250, 226, 190, 0.5);
+    padding: 2px;
+    border-radius: 20px;
+    margin-right: 45px;
+
+}
+
+.presentation .service-btn button{
+    border:none;
+    height: 100%;
+    font-size: 16px;
+    width:49%;
+    border-radius:20px;
+    padding: 8px 0px;
+    
+}
+.presentation .service-btn .livraison{
+    background-color: #fff;
+    color: #f18f01;
+}
+.presentation .service-btn .click-collect{
+    background-color: transparent;
+    color: #fff;
+    font-weight: bold;
+}
+
+.presentation .service-btn .click-collect:hover{
+    cursor:pointer;
+    background-color: #fff;
+    color: #f18f01;
+    font-weight: normal;
+}
+
+.adresse-btn{
+    line-height: 38px;
+    width: 330px;
+    background-color: white;
+    display:flex;
+   
+}
+.adresse-btn span{
+    padding: 0 0 0 10px;
+    color: #696969;
+}
+
+.adresse-btn input {
+    background-color: transparent;
+    height:38px;
+    padding: 0 8px;
+    font-size: 16px;
+}
+.adresse-btn button i {
+    padding-right: 5px;
+}
+.adresse-btn button{
+    border:none;
+    width: 40%;
+    height: 37px;
+    border-radius: 20px;
+    background-color: rgba(255, 153, 0, 0.7);;
+    color: #fff;
+    font-weight: bold;
+}
+
+/* Les types de cuisines */
+.typecuisine-area{
+    margin-top: 4rem ;
+  
+    display:flex;
+    justify-content: space-between;
+}
+
+.cuisine-item{
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    background-color: #fff;
+    margin: 0 5px;
+    position: relative;
+}
+
+.cuisine-logo {
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    
+}
+.cuisine-logo i {
+    font-size: 35px;
+}
+
+.cuisine-title{
+    position:absolute;
+    top: 130%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 18px;
+    font-weight: 500;
+    color:white;
+}
+
+.cuisine-item:hover{
+    cursor: pointer;
+    background-color: #048ba8;
+    color: #fff;
+}
+
+/* Section catalogue */
+
+.catalogue-area{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+}
+
+.moustache-presentation, .catalogue-presentation{
+    display:flex;
+    background-color: rgb(153, 194, 77,0.15);
+    width: 70%;
+    height:auto;
+    padding: 15px;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+  
+}
+.moustache-presentation .moustache-logo {
+    width:30%;
+    position: relative;
+}
+.moustache-presentation .moustache-logo img{
+    width:50%;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+}
+.moustache-presentation .moustache-text h2{
+    font-size: 35px;
+    font-family: 'Pangolin', cursive;
+    color: #2e4057;
+    margin: 10px;
+  
+}
+
+.moustache-presentation .moustache-text h3{
+    color: #f18f01;
+    font-size: 25px;
+    margin: 10px;
+}
+.moustache-presentation .moustache-text p{
+    font-size: 20px;
+    margin: 10px;
+}
+.moustache-presentation .moustache-text button{
+    margin: 10px;
+}
+
+.moustache-close{
+    font-size: 20px;
+}
+.moustache-close:hover{
+    cursor:pointer;
+}
+
+.catalogue-presentation{
+    align-items: center;
+    display:flex;
+    background-color: rgb(153, 194, 77,0.15);
+    width: 70%;
+    height:100px;
+    padding: 15px;
+    justify-content: center;
+    margin: 10px;
+    border-radius: 10px;
+}
+.catalogue-presentation .catalogue-logo{
+    width:20%;
+}
+.catalogue-presentation  .catalogue-logo img {
+    width:100%;
+}
+
+.catalogue-presentation  .catalogue-text p span {
+
+   color : #f18f01;
+   font-weight: bold;
+}
+
+/* Catalogue resto */
+.catalogue-resto{
+    width:70%;
+    display:flex;
+    flex-direction: column;
+    margin:1rem auto;
+}
+.fav-resto-title {
+    margin-bottom: 2rem;
+}
+.fav-resto-title i , .restaurant-title i{
+    color: #f18f01;
+}
+
+.resto-items{
+    display:flex;
+    justify-content: space-between;
+}
+
+.resto-card{
+    width: 400px;
+    height: 250px;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    flex-shrink: 0;
+}
+
+.resto-card .card-img{
+    height: 80%;
+    border-top-left-radius:15px;
+    border-top-right-radius:15px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    transition: background 1s ease-in-out;
+}
+
+.img1 {
+    background: url("https://images.unsplash.com/photo-1513104890138-7c749659a591?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80");
+    
+  
+}
+.img2 {
+    background: url("https://images.unsplash.com/photo-1551790629-9d5c2d781d8b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1527&q=80");
+    background-size: cover;
+    background-position: center;
+  
+}
+.img3 {
+    background: url("https://images.unsplash.com/photo-1595238734477-ae7f8a79ce02?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1172&q=80");
+    background-size: cover;
+    background-position: center;
+  
+}
+
+.card-img:hover{
+    cursor:pointer;
+    background-size:110%;
+}
+.resto-card .card-img h3 {
+    color: white;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 22px;
+}
+
+.resto-card .card-img .info-liv{
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    background-color: #99c24d;
+    width:85%;
+    text-align: center;
+    padding: 5px;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.card-presentation{
+    text-align: center;
+    position:relative;
+    top: 20px;
+}
+
+.restaurant-area{
+    margin: 3rem 0;
+}
+.restaurant-title{
+    margin-bottom: 1rem;
+}
